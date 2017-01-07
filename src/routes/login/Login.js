@@ -114,6 +114,11 @@ class Login extends React.Component {
               </button>
             </div>
           </form>
+          <form action="/about">
+            <button className={s.button} type="submit">
+            Register
+          </button>
+          </form>
         </div>
       </div>
     );

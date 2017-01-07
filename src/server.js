@@ -84,6 +84,10 @@ app.use('/graphql', expressGraphQL(req => ({
   rootValue: { request: req },
   pretty: process.env.NODE_ENV !== 'production',
 })));
+app.post('/register',
+  (req, res) => {
+    res.status(200).json({ success: true, data: "May ha buoi" })
+  });
 
 //
 // Register server-side rendering middleware

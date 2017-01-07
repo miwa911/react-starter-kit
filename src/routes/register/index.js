@@ -23,5 +23,12 @@ export default {
       component: <Layout><Register title={title} /></Layout>,
     };
   },
-
+//   {
+//  path: '/tasks/:id',
+//  async action({ params }) {
+//    const resp = await fetch(`/api/tasks/${params.id}`);
+//    const data = await resp.json();
+//    return { title: `To-Do (${data.length})`, component: TodoList, props: data };
+//  }
+// }
 };
